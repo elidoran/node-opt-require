@@ -7,10 +7,10 @@ module.exports = (options, opt) ->
   theRequire = options?.require ? require
 
   # we'll use validatePath below, so, grab that
-  validatePath = opt.parse.typeDefs.path.validate
+  validatePath = opt.typeDefs.path.validate
 
   # set our new type into there
-  opt.parse.typeDefs.require =
+  opt.typeDefs.require =
 
     type: theRequire
 
